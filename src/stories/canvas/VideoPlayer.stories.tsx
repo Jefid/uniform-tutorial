@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type { Meta, StoryObj } from '@storybook/react';
 import { UniformComposition } from '@uniformdev/canvas-react';
-import VideoPlayer, { Props as VideoPlayerProps } from '@/canvas/VideoPlayer';
+import VideoPlayer, { VideoPlayerProps } from '@/canvas/VideoPlayer';
 import { createFakeCompositionData } from '../utils';
 
 const meta: Meta<typeof VideoPlayer> = {

@@ -5,7 +5,7 @@ module.exports = {
   rules: {
     '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['error', { printWidth: 120 }],
     'no-underscore-dangle': 'off',
     'import/no-anonymous-default-export': [
       'error',

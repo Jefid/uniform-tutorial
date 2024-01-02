@@ -1,5 +1,5 @@
-import { registerUniformComponent, ComponentProps } from '@uniformdev/canvas-react';   
-import { VideoPlayer } from './VideoPlayer'
+import { registerUniformComponent, ComponentProps } from '@uniformdev/canvas-react';
+import { VideoPlayer } from './VideoPlayer';
 
 export type VideoPlayerProps = ComponentProps<{
   id: string;

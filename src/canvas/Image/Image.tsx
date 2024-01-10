@@ -28,7 +28,7 @@ export const Image: FC<ImageProps> = ({
   return (
     <div
       className={classNames(
-        'relative max-w-max h-max',
+        'relative max-w-max h-max min-w-20',
         getBorderColorStyle(borderColor),
         getBorderRadiusStyle(borderRadius)
       )}

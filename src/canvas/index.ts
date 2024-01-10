@@ -39,6 +39,8 @@ import './Spacer';
 import './Testimonial';
 import './Video';
 import './VideoPlayer';
+import './CloudinaryCard';
+import './CloudinaryImage';
 
 export { default as Accordion } from './Accordion';
 
@@ -107,3 +109,9 @@ export type { VideoProps } from './Video';
 
 export { default as VideoPlayer } from './VideoPlayer';
 export type { VideoPlayerProps } from './VideoPlayer';
+
+export { default as CloudinaryCard } from './CloudinaryCard';
+export type { CloudinaryCardProps } from './CloudinaryCard';
+
+export { default as CloudinaryImage } from './CloudinaryImage';
+export type { CloudinaryImageProps } from './CloudinaryImage';

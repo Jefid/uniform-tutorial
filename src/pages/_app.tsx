@@ -5,6 +5,9 @@ import type { RootComponentInstance } from '@uniformdev/canvas';
 import createUniformContext from '@/context/createUniformContext';
 import '@/canvas';
 import '../styles/globals.scss';
+import "instantsearch.css/themes/algolia.css";
+import '@/canvas/Algolia';
+
 
 const clientContext = createUniformContext();
 

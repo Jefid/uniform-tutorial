@@ -22,7 +22,6 @@ export type HeroProps = ComponentProps<
     title: string;
     titleStyle: Types.HeadingStyles;
     description: string;
-    image?: string;
     video?: string;
     primaryButtonCopy: string;
     primaryButtonLink: Types.ProjectMapLink;
@@ -44,6 +43,7 @@ export type HeroProps = ComponentProps<
     delay?: Types.AnimationDelay;
     animationPreview?: boolean;
     styles?: Styles;
+    cloudinaryImage: string;
   }
 >;
 

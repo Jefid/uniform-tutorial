@@ -9,7 +9,6 @@ export const HeroBackgroundImage: FC<HeroProps> = ({
   title,
   titleStyle = 'h1',
   description,
-  image,
   video,
   primaryButtonLink,
   primaryButtonStyle = 'primary',
@@ -35,6 +34,7 @@ export const HeroBackgroundImage: FC<HeroProps> = ({
   animationPreview,
   delay = 'none',
   styles,
+  cloudinaryImage
 }) => {
   const baseTextStyle = textColorVariant === 'Light' ? 'text-primary-content' : 'text-secondary-content';
 
@@ -63,7 +63,7 @@ export const HeroBackgroundImage: FC<HeroProps> = ({
         })}
       >
         <BackgroundImage
-          image={image}
+          image={cloudinaryImage}
           video={video}
           objectFit={objectFit}
           overlayColor={overlayColor}

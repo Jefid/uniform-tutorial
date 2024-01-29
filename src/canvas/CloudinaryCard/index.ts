@@ -11,6 +11,7 @@ export type CloudinaryCardProps = ComponentProps<{
   description: string;
   sanityDescription: string;
   sanityTitle: string;
+  className: any;
 }>;
 
 registerUniformComponent({ type: 'cloudinaryCard', component: CloudinaryCard });

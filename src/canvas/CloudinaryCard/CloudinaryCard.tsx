@@ -2,6 +2,7 @@ import { FC } from 'react';
 import classNames from 'classnames';
 import { CloudinaryCardProps } from '.';
 import NextImage from '../Image';
+import Image from 'next/image';
 import { getMediaUrl } from '../../utilities';
 
 export const CloudinaryCard: FC<CloudinaryCardProps> = ({
@@ -15,7 +16,7 @@ export const CloudinaryCard: FC<CloudinaryCardProps> = ({
 }) => {
   return (
     <div className={classNames('flex flex-col items-center pt-12')}>
-      <NextImage
+      <Image
         src={getMediaUrl(src)}
         width={width}
         height={height}

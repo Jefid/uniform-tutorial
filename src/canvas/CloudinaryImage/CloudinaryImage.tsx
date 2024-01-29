@@ -2,11 +2,12 @@ import { FC } from 'react';
 import classNames from 'classnames';
 import { CloudinaryImageProps } from '.';
 import NextImage from '../Image';
+import Image from 'next/image';
 import { getMediaUrl } from '../../utilities';
 
 export const CloudinaryImage: FC<CloudinaryImageProps> = ({ src, width, height, alt }) => {
   return (
-    <NextImage
+    <Image
       src={getMediaUrl(src)}
       width={width}
       height={height}

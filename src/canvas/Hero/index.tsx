@@ -44,6 +44,7 @@ export type HeroProps = ComponentProps<
     animationPreview?: boolean;
     styles?: Styles;
     cloudinaryImage: string;
+    image?: any;
   }
 >;
 

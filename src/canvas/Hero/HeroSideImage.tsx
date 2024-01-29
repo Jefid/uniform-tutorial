@@ -9,7 +9,7 @@ export const HeroSideImage: FC<HeroProps> = ({
   title,
   titleStyle = 'h1',
   description,
-  image,
+  // image,
   video,
   primaryButtonLink,
   primaryButtonStyle = 'primary',

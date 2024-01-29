@@ -17,14 +17,12 @@ const BASE_PROPS: Omit<HeroProps, 'component' | 'children'> = {
   eyebrowText: 'Hero',
   title: 'Are developers stuck with outdated tech and custom code to maintain?',
   titleStyle: 'h2',
-  description:
-    "Use this paragraph to share information about your company or brand. Make it as engaging as possible, and showcase your brand's unique personality.",
+  description: "Use this paragraph to share information about your company or brand. Make it as engaging as possible, and showcase your brand's unique personality.",
   primaryButtonCopy: 'Home',
   primaryButtonLink: {
     path: '/',
   },
-  image:
-    'https://res.cloudinary.com/uniform-demos/image/upload/v1692276482/csk-marketing/Rectangle_7_2_uupdjo_wm94da.webp',
+  image: 'https://res.cloudinary.com/uniform-demos/image/upload/v1692276482/csk-marketing/Rectangle_7_2_uupdjo_wm94da.webp',
   primaryButtonStyle: 'primary',
   secondaryButtonCopy: 'Components',
   secondaryButtonLink: {
@@ -42,6 +40,7 @@ const BASE_PROPS: Omit<HeroProps, 'component' | 'children'> = {
   paddingTop: PaddingSize.Medium,
   paddingBottom: PaddingSize.Medium,
   textColorVariant: 'Dark',
+  cloudinaryImage: ''
 };
 
 const argTypes = {

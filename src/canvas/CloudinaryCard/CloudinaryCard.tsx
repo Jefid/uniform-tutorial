@@ -20,7 +20,7 @@ export const CloudinaryCard: FC<CloudinaryCardProps> = ({
         src={getMediaUrl(src)}
         width={width}
         height={height}
-        className={classNames('relative max-w-max h-max')}
+        // className={classNames('relative max-w-max h-max')}
         alt={alt ?? 'image'}
         quality={quality}
       />

@@ -1,7 +1,12 @@
 import React from 'react';
 import { ComponentProps, UniformSlot } from '@uniformdev/canvas-react';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox } from 'react-instantsearch';
+import {
+  InstantSearch,
+  Highlight,
+  Hits,
+  SearchBox,
+} from 'react-instantsearch-hooks-web';
 import getConfig from 'next/config';
 import CanvasAlgoliaProvider from '../../context/CanvasAlgoliaProvider';
 import ErrorPropertyCallout from '@/canvas/Algolia/ErrorPropertyCallout';
@@ -32,8 +37,8 @@ const CanvasInstantSearch = ({ instantSearchParams, title }: ComponentProps<Canv
     <CanvasAlgoliaProvider defaultIndexName={instantSearchProps.indexName}>
       {Boolean(title) && <h2>{title}</h2>}
       <InstantSearch {...instantSearchProps} indexName={instantSearchProps.indexName} searchClient={searchClient}>
+      <SearchBox placeholder='search breweries here...' style={{maxWidth: '50%'}}/>
         <UniformSlot name="widgets" />
-        <SearchBox />
       </InstantSearch>
     </CanvasAlgoliaProvider>
   );

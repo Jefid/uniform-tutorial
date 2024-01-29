@@ -22,7 +22,7 @@ export const Breadcrumbs: FC<BreadcrumbsProps> = ({
   return (
     <div
       key={`breadcrumbs-${breadcrumbsToShow.length}`}
-      className={classNames('text-sm', getColorStyle(colorStyle), styles?.container)}
+      className={classNames('text-l', getColorStyle(colorStyle), styles?.container)}
     >
       <ul className="flex items-center">
         {breadcrumbsToShow?.map((breadcrumb: Types.ProjectMapLink, index) => (

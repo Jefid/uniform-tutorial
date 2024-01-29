@@ -1,5 +1,7 @@
 import React from 'react';
-import { Hits } from 'react-instantsearch-hooks';
+import {
+  Hits,
+} from 'react-instantsearch-hooks-web';
 import { ComponentInstance } from '@uniformdev/canvas';
 
 enum HitTypes {
@@ -8,6 +10,8 @@ enum HitTypes {
 
 export const renderHits = (component: ComponentInstance) => {
   const hitType = component?.slots?.hitComponent?.[0]?.type;
+
+
   switch (hitType) {
     case HitTypes.Hit:
       return <Hits hitComponent={Hit} />;
@@ -26,8 +30,9 @@ const Hit = ({ hit }: { hit: HitComponent }) => {
 
   return (
     <div>
-      <h3>{`objectID: ${objectID}`}</h3>
-      <p style={{ wordBreak: 'break-all' }}>{JSON.stringify(properties)}</p>
+      <p style={{ textAlign: 'center'}} >{JSON.stringify(properties?.name).replace(/\"/g, "")}</p>
+      <p style={{ textAlign: 'center'}}>Brewery Type: {JSON.stringify(properties?.brewery_type).replace(/\"/g, "")}</p>
+      <p style={{ textAlign: 'center'}}>{JSON.stringify(properties?.city).replace(/\"/g, "")}, {JSON.stringify(properties?.state).replace(/\"/g, "")}</p>
     </div>
   );
 };

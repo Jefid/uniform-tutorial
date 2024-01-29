@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentProps } from '@uniformdev/canvas-react';
-import { Configure, Pagination, RefinementList, SearchBox } from 'react-instantsearch';
+import { Configure, Pagination, RefinementList, SearchBox } from 'react-instantsearch-hooks-web';
 import ErrorPropertyCallout from '@/canvas/Algolia/ErrorPropertyCallout';
 import { renderHits } from '@/canvas/Algolia/Hit';
 

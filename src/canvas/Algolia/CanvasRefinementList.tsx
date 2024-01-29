@@ -1,5 +1,5 @@
 import React from 'react';
-import { RefinementList } from 'react-instantsearch';
+import { RefinementList } from 'react-instantsearch-hooks-web';
 import { ComponentProps } from '@uniformdev/canvas-react';
 import ErrorPropertyCallout from '@/canvas/Algolia/ErrorPropertyCallout';
 
